@@ -1,0 +1,123 @@
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
+
+#masthead, #content, #colophon {
+	max-width: 1350px;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+.entry-header {
+	padding: 0 50px;
+	text-align: right;
+}
+#page {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+#primary {
+	padding-left: 105px;
+	min-height: 800px
+}
+//Resume Front Page
+.spacer {
+	height: 20px;
+	clear: both;
+	position: relative;
+}
+.site-info h5 {
+	font-family: $serif;
+	text-align: center;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 12px;
+	a {
+		text-decoration: none;
+		color: $color__text-main;
+		font-weight: 600;
+	}
+}
+/*Header/Name/Title*/
+.site-branding {
+	width: 100%;
+	padding-left: 130px;
+	margin-bottom: 50px;
+	h1 {
+		font-family: $oswald;
+		color: $red;
+		margin: 40px 0 0 0;
+		line-height: 1;
+		a {
+			color: $red;
+			&:hover {
+				color: $red;
+				text-decoration: none;
+			}
+		}
+	}
+	h2 {
+		color: $dark_red;
+		margin: 0 0 0 5px;
+		padding: 0;
+	}
+}
+/*Resume Body*/
+.resume_main {
+	max-width: 900px;
+	h1, h2, h3, h4, h5, h6, p, ul, li {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		list-style-type: none;
+	}
+	p, li {
+		font-family: $serif;
+		font-size: 12px;
+		line-height: 2;
+	}
+}
+.resume_icon {
+	float: left;
+	font-size: 20px;
+}
+.resume_section {
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-left: 35px;
+	font-family: $sans;
+}
+.resume_content {
+	h3 {
+		font-size: 2.5rem;
+		margin-bottom: 5px;
+	}
+	h4 {
+		font-style: 2rem;
+		margin-bottom: 15px;
+	}
+	ul {
+		margin-bottom: 20px;
+	}
+	li {
+		margin-bottom: 5px;
+	}
+	p {
+		margin-bottom: 20px;
+	}
+}
+.skills {
+	ul {
+		-webkit-columns: 200px 2;
+		-moz-columns: 200px 2;
+	    columns: 200px 2;
+    }
+}
+.work {
+	
+}
+.profile {
+	
+}
+.school {
+	
+}

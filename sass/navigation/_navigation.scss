@@ -1,0 +1,94 @@
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+@import "links";
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+@import "menus";
+
+@import url('http://getbootstrap.com/dist/css/bootstrap.css');
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+
+nav.sidebar-menu-collapsed {
+    width: 75px;
+    @include transition(all 0.5s ease-in-out);
+}
+nav.sidebar-menu-expanded {
+    width: 160px;
+    @include transition(all 0.5s ease-in-out);
+}
+nav.sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    background: none repeat scroll 0 0 $dark_red;
+    color: white;
+    padding: 50px 10px;
+    font-family: $sans;
+}
+nav.sidebar a#justify-icon {
+    outline: 0;
+    color: white;
+    font-size: 24px;
+    font-style: normal;
+    margin-left: 30%;
+}
+nav.sidebar a#logout-icon {
+    outline: 0;
+    color: white;
+    font-size: 24px;
+    font-style: normal;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+nav.sidebar ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 60px;
+}
+nav.sidebar ul li {
+    margin: 0;
+    padding: 0;
+    margin-top: 35px;
+    list-style-type: none;
+    text-align: center;
+    @include transition(all 0.5s ease-in-out);
+}
+nav.sidebar ul li a.expandable {
+    outline: 0;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    @include transition(all 0.5s ease-in-out);
+}
+nav.sidebar ul li a.expandable:hover {
+    color: #fff;
+    background-color: $red;
+    padding: 5px;
+}
+nav.sidebar ul li a.expandable span.expanded-element {
+    margin-left: 2px;
+    display: none;
+    font-size: 16px;
+    position: relative;
+    bottom: 2px;
+    text-transform: uppercase;
+}
+nav.sidebar ul li.active {
+    background: none repeat scroll 0 0 $red;
+    border-radius: 4px;
+    text-align: center;
+    margin-left: -4px;
+    padding: 4px;
+    @include transition(all 0.5s ease-in-out);
+}
+nav.sidebar ul li.active a.expandable {
+    color: white !important;
+}
+nav.sidebar ul li.active a.expandable:hover {
+    color: white !important;
+}
